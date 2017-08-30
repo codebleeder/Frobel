@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Froebel", "Froebel\Froebel.njsproj", "{890F8730-24CE-4BEF-B15E-32CCECA64461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froebel2", "Froebel2\Froebel2.csproj", "{5EF10DCF-32F3-41FE-B591-43DD95B00B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPATemplateCheck", "SPATemplateCheck\SPATemplateCheck.csproj", "{23BC2304-AF1B-4583-8106-6B95BEC70D01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froebel3_Canvas", "Froebel3\Froebel3_Canvas.csproj", "{4F08BBB1-AEC2-48B6-B0C4-D9A55E149712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Frobel_FabricJS2", "Frobel_FabricJS2\Frobel_FabricJS2.csproj", "{2E4B5FD5-0107-4D2A-852D-A7FC95546540}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Frobel_FabricJS3", "Frobel_FabricJS3\Frobel_FabricJS3.njsproj", "{F807A368-82B9-4DF2-A3D8-305731F51FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{890F8730-24CE-4BEF-B15E-32CCECA64461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890F8730-24CE-4BEF-B15E-32CCECA64461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890F8730-24CE-4BEF-B15E-32CCECA64461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890F8730-24CE-4BEF-B15E-32CCECA64461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF10DCF-32F3-41FE-B591-43DD95B00B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF10DCF-32F3-41FE-B591-43DD95B00B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF10DCF-32F3-41FE-B591-43DD95B00B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF10DCF-32F3-41FE-B591-43DD95B00B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BC2304-AF1B-4583-8106-6B95BEC70D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BC2304-AF1B-4583-8106-6B95BEC70D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BC2304-AF1B-4583-8106-6B95BEC70D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BC2304-AF1B-4583-8106-6B95BEC70D01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F08BBB1-AEC2-48B6-B0C4-D9A55E149712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F08BBB1-AEC2-48B6-B0C4-D9A55E149712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F08BBB1-AEC2-48B6-B0C4-D9A55E149712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F08BBB1-AEC2-48B6-B0C4-D9A55E149712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4B5FD5-0107-4D2A-852D-A7FC95546540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4B5FD5-0107-4D2A-852D-A7FC95546540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4B5FD5-0107-4D2A-852D-A7FC95546540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4B5FD5-0107-4D2A-852D-A7FC95546540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F807A368-82B9-4DF2-A3D8-305731F51FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F807A368-82B9-4DF2-A3D8-305731F51FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F807A368-82B9-4DF2-A3D8-305731F51FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F807A368-82B9-4DF2-A3D8-305731F51FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

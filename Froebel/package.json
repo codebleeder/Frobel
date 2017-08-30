@@ -1,0 +1,9 @@
+{
+  "name": "froebel",
+  "version": "0.0.0",
+  "description": "Froebel",
+  "main": "server.js",
+  "author": {
+    "name": "sharads"
+  }
+}
