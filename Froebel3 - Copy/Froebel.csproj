@@ -91,6 +91,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Metron.ttf" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\Home - Copy.js" />
     <Content Include="Scripts\Home.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -98,6 +99,7 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="Content\Home.css" />
     <Content Include="Scripts\jscolor.min.js" />
+    <Content Include="Views\Home\Fabric.html" />
     <Content Include="Web.config" />
     <Content Include="Content\Metron.woff">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
