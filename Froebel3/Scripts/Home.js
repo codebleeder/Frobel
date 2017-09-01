@@ -11,39 +11,85 @@ function canvas_side() {
     // fabric
     var canvas_side = new fabric.Canvas('canvas-side');
     var canvas_main = new fabric.Canvas('canvas-main');
-    var positions = {
-        rect: {top: 30, left: 50}
-    }
+    var shapes_main = {
+        rect: {
+            top: 30,
+            left: 50,
+            width: 70,
+            height: 40,
+            fill: 'rgb(239, 157, 249)'
+        },
 
-    function add_rect() {
+        triangle: {
+            top: 100,
+            left: 50,
+            width: 70,
+            height: 40,
+            fill: '#fe5d26',            
+        },
 
-    }
+        circle: {
+            top: 170,
+            left: 50,
+            radius: 25,
+            fill: '#f2c078'
+        }
+    };
 
-    function add_new_shape(top, left){
-        for (var shape in positions) {
-            console.log(shape);
-            if (shape.top === top && shape.left === left) {
-                
-            }
+    var shapes_side = {
+        rect: {
+            top: 30,
+            left: 50,
+            width: 70,
+            height: 40,
+            fill: 'rgb(239, 157, 249)',            
+            hasBorders: false,
+            hasControls: false
+        },
+
+        triangle: {
+            top: 100,
+            left: 50,
+            width: 70,
+            height: 40,
+            fill: '#fe5d26',
+            hasBorders: false,
+            hasControls: false
+        },
+
+        circle: {
+            top: 170,
+            left: 50,
+            radius: 25,
+            fill: '#f2c078',
+            hasBorders: false,
+            hasControls: false
+        }
+    };
+    
+    function add_shape(shape) {
+        if (shape === 'rect') {
+            var rect_main = new fabric.Rect(shapes_main.rect);
+            canvas_main.add(rect_main);
+        }
+
+        if (shape == 'triangle') {
+            var triangle_main = new fabric.Triangle(shapes_main.triangle);
+            canvas_main.add(triangle_main);
+        }
+
+        if (shape == 'circle') {
+            var circle_main = new fabric.Circle(shapes_main.circle);
+            canvas_main.add(circle_main);
         }
     }
-    var rect = new fabric.Rect({
-        top: 30,
-        left: 50,
-        width: 70,
-        height: 40,
-        fill: 'rgb(239, 157, 249)',
-        //selectable: false,
-        //lockMovementX: true,
-        //lockMovementY: true 
-        hasBorders: false, 
-        hasControls: false, 
-    });
+    
+    
     fabric.Object.prototype.transparentCorners = true; 
     
 
     canvas_side.on('mouse:over', function (e) {
-        rect.set('fill', 'red');
+        rect_side.set('fill', 'red');
         canvas_side.renderAll();
     });
 
@@ -51,30 +97,24 @@ function canvas_side() {
         console.log('object selected');
     });
     canvas_side.on('mouse:out', function (e) {
-        rect.set('fill', 'green');
+        rect_side.set('fill', 'green');
         canvas_side.renderAll();
     });
     canvas_side.hoverCursor = 'crosshair';
 
-    //function log(eventName) {
-    //    console.log(eventName);
-    //}
+    
 
-    //function observe(eventName) {
-    //    //logObservingEvent(eventName);
-    //    canvas.on(eventName, function (opt) {
-    //        log(eventName, 1, opt);
-            
-    //    });        
-    //}
-
-    //observe('object:selected');
-
-    canvas_side.on('object:selected', function (opt) {
-        console.log(opt);
-        add_new_shape(opt.target.top, opt.target.left);
+    canvas_side.on('object:selected', function (opt) {        
+        var shape_type = opt.target.get('type');
+        add_shape(shape_type);
     });
-    canvas_side.add(rect);
+
+    var rect_side = new fabric.Rect(shapes_side.rect);
+    var triangle_side = new fabric.Triangle(shapes_side.triangle);
+    canvas_side.add(rect_side);
+    canvas_side.add(triangle_side);
+    var circle_side = new fabric.Circle(shapes_side.circle);
+    canvas_side.add(circle_side);
 }
 
 $(document).ready(function () {
