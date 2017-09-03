@@ -13,32 +13,32 @@ function canvas_side() {
     var canvas_main = new fabric.Canvas('canvas-main');
     var shapes_main = {
         rect: {
-            top: 30,
-            left: 50,
+            top: 20.8333,
+            left: 15,
             width: 70,
             height: 40,
             fill: 'rgb(239, 157, 249)'
         },
 
         square: {
-            top: 80,
-            left: 50,
+            top: 20.8333,
+            left: 15,
             width: 40,
             height: 40,
             fill: 'rgb(239, 157, 249)'
         },
 
         triangle: {
-            top: 140,
-            left: 50,
+            top: 20.8333,
+            left: 15,
             width: 40,
             height: 34.6410161514,
             fill: '#fe5d26',            
         },
 
         right_triangle: {
-            top: 210,
-            left: 60,
+            top: 40.8333,
+            left: 90,
             width: 56.5685424949,
             height: 28.284271245,
             fill: '#fe5d26',
@@ -46,25 +46,26 @@ function canvas_side() {
         },
 
         circle: {
-            top: 240,
-            left: 50,
+            top: 20.8333,
+            left: 15,
             radius: 25,
             fill: '#f2c078'
         },
 
         semi_circle: {
-            top: 240,
-            left: 50,
+            top: 20.8333,
+            left: 90,
             radius: 25,
             fill: '#f2c078',
-            endAngle: Math.PI
+            endAngle: Math.PI,
+            angle: 90
         }
     };
 
     var shapes_side = {
         rect: {
-            top: 30,
-            left: 50,
+            top: 20.8333,
+            left: 15,
             width: 70,
             height: 40,
             fill: 'rgb(239, 157, 249)',            
@@ -73,8 +74,8 @@ function canvas_side() {
         },
 
         square: {
-            top: 80,
-            left: 50,
+            top: 104.16333,
+            left: 30,
             width: 40,
             height: 40,
             fill: 'rgb(239, 157, 249)',
@@ -83,8 +84,8 @@ function canvas_side() {
         },
 
         triangle: {
-            top: 140,
-            left: 50,
+            top: 187.163333,
+            left: 30,
             width: 40,
             height: 34.6410161514,
             fill: '#fe5d26',
@@ -93,8 +94,8 @@ function canvas_side() {
         },
 
         right_triangle: {
-            top: 210,
-            left: 60,
+            top: 290.496333,
+            left: 90,
             width: 56.5685424949,
             height: 28.284271245,
             fill: '#fe5d26',
@@ -104,8 +105,8 @@ function canvas_side() {
         },
 
         circle: {
-            top: 240,
-            left: 50,
+            top: 353.8299,
+            left: 30,
             radius: 25,
             fill: '#f2c078',
             hasBorders: false,
@@ -113,14 +114,15 @@ function canvas_side() {
         },
 
         semi_circle: {
-            top: 300,
-            left: 50,
-            radius: 25,
-            fill: '#f2c078',
+            top: 437.2,
+            left: 90,
+            radius: 25,            
             startAngle: 0,
             endAngle: Math.PI,
             hasBorders: false,
-            hasControls: false
+            hasControls: false,
+            //fill: '#f2c078',
+            angle: 90
         },
     };
     
@@ -161,18 +163,18 @@ function canvas_side() {
     fabric.Object.prototype.transparentCorners = true; 
     
 
-    canvas_side.on('mouse:over', function (e) {
-        rect_side.set('fill', 'red');
-        canvas_side.renderAll();
-    });
+    //canvas_side.on('mouse:over', function (e) {
+    //    rect_side.set('fill', 'red');
+    //    canvas_side.renderAll();
+    //});
 
     canvas_side.on('object:selected', function () {
         console.log('object selected');
     });
-    canvas_side.on('mouse:out', function (e) {
-        rect_side.set('fill', 'green');
-        canvas_side.renderAll();
-    });
+    //canvas_side.on('mouse:out', function (e) {
+    //    rect_side.set('fill', 'green');
+    //    canvas_side.renderAll();
+    //});
     canvas_side.hoverCursor = 'crosshair';
 
     
@@ -194,6 +196,20 @@ function canvas_side() {
     canvas_side.add(right_triangle_side);
     var semi_circle_side = new fabric.Circle(shapes_side.semi_circle);
     canvas_side.add(semi_circle_side);
+
+    //var semi_circle_test = new fabric.Circle({
+    //    radius: 20,
+    //    left: 50,
+    //    top: 250,
+    //    angle: 90,
+    //    startAngle: 0,
+    //    endAngle: Math.PI,
+    //    //stroke: '#000',
+    //    //strokeWidth: 3,
+
+    //});
+
+    //canvas_side.add(semi_circle_test);
 }
 
 $(document).ready(function () {
