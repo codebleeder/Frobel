@@ -17,7 +17,7 @@ function canvas_side() {
             left: 15,
             width: 70,
             height: 40,
-            fill: 'rgb(239, 157, 249)'
+            fill: '#25ced1'
         },
 
         square: {
@@ -25,7 +25,7 @@ function canvas_side() {
             left: 15,
             width: 40,
             height: 40,
-            fill: 'rgb(239, 157, 249)'
+            fill: '#d1d1d1'
         },
 
         triangle: {
@@ -33,7 +33,7 @@ function canvas_side() {
             left: 15,
             width: 40,
             height: 34.6410161514,
-            fill: '#fe5d26',            
+            fill: '#fceade',            
         },
 
         right_triangle: {
@@ -41,7 +41,7 @@ function canvas_side() {
             left: 90,
             width: 56.5685424949,
             height: 28.284271245,
-            fill: '#fe5d26',
+            fill: '#ff8a5b',
             angle: 135
         },
 
@@ -49,14 +49,14 @@ function canvas_side() {
             top: 20.8333,
             left: 15,
             radius: 25,
-            fill: '#f2c078'
+            fill: '#ea526f'
         },
 
         semi_circle: {
             top: 20.8333,
             left: 90,
             radius: 25,
-            fill: '#f2c078',
+            fill: '#115e5f',
             endAngle: Math.PI,
             angle: 90
         }
@@ -68,9 +68,11 @@ function canvas_side() {
             left: 15,
             width: 70,
             height: 40,
-            fill: 'rgb(239, 157, 249)',            
+            fill: '#25ced1',            
             hasBorders: false,
-            hasControls: false
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true 
         },
 
         square: {
@@ -78,9 +80,11 @@ function canvas_side() {
             left: 30,
             width: 40,
             height: 40,
-            fill: 'rgb(239, 157, 249)',
+            fill: '#d1d1d1',
             hasBorders: false,
-            hasControls: false 
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true 
         },
 
         triangle: {
@@ -88,9 +92,11 @@ function canvas_side() {
             left: 30,
             width: 40,
             height: 34.6410161514,
-            fill: '#fe5d26',
+            fill: '#fceade',
             hasBorders: false,
-            hasControls: false
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true 
         },
 
         right_triangle: {
@@ -98,19 +104,23 @@ function canvas_side() {
             left: 90,
             width: 56.5685424949,
             height: 28.284271245,
-            fill: '#fe5d26',
+            fill: '#ff8a5b',
             hasBorders: false,
             hasControls: false,
-            angle: 135
+            angle: 135,
+            lockMovementX: true,
+            lockMovementY: true 
         },
 
         circle: {
             top: 353.8299,
             left: 30,
             radius: 25,
-            fill: '#f2c078',
+            fill: '#ea526f',
             hasBorders: false,
-            hasControls: false
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true 
         },
 
         semi_circle: {
@@ -121,8 +131,10 @@ function canvas_side() {
             endAngle: Math.PI,
             hasBorders: false,
             hasControls: false,
-            //fill: '#f2c078',
-            angle: 90
+            fill: '#115e5f',
+            angle: 90,
+            lockMovementX: true,
+            lockMovementY: true 
         },
     };
     
