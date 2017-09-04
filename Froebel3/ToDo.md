@@ -3,3 +3,4 @@
 - [ ] Add remove shape object/selected objects  
 - [ ] Beautify buttons 
 - [ ] Add button to convert to image, and share on facebook/twitter. 
+- [ ] Remove other project folders from git

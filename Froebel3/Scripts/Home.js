@@ -2,6 +2,11 @@
 function init() {
     canvas_main();
     canvas_side();
+    function setTextColor(picker) {
+        //document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+        console.log('set text color');
+    }
+
 }
 function canvas_main() {
     //var canvas = new fabric.Canvas('canvas-main');
@@ -222,12 +227,14 @@ function canvas_side() {
     //});
 
     //canvas_side.add(semi_circle_test);
+
+
 }
 
 $(document).ready(function () {
-    function setTextColor(picker) {
-        document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
-    }
+    //function setTextColor(picker) {
+    //    document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+    //}
 
    
 });
