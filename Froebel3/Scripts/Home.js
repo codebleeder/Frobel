@@ -7,6 +7,8 @@ function init() {
         console.log('set text color');
     }
 
+    
+
 }
 function canvas_main() {
     //var canvas = new fabric.Canvas('canvas-main');
@@ -228,6 +230,18 @@ function canvas_side() {
 
     //canvas_side.add(semi_circle_test);
 
+    window.onkeydown = onKeyDownHandler;
+
+    function onKeyDownHandler(e) {
+        switch (e.key) {
+            case 'Delete': // delete                
+                var activeGroup = canvas_main.getActiveObjects();
+                activeGroup.forEach(function (object) {
+                    canvas_main.remove(object);
+                });
+                canvas_main.discardActiveObject();                
+        }
+    };
 
 }
 

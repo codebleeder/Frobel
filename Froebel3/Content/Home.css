@@ -59,5 +59,16 @@ body {
 
 button {
     width: 100px;
-    height: 40px;
+    height: 30px;
+    background-color: whitesmoke;
+    border: none;
+}
+
+button:hover {
+    font-weight:bold;
+}
+
+button:active {
+    top:10px;
+    border: none;
 }
