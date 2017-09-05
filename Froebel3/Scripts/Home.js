@@ -243,12 +243,21 @@ function canvas_side() {
         }
     };
 
+    document.getElementById("btn-add-color").onclick = function () {
+        var activeObjects = canvas_main.getActiveObjects();
+        var color = document.getElementById('btn-color-value');
+        activeObjects.forEach(function (object) {
+            object.set('fill', '#' + color.firstChild.data);
+        });
+        canvas_main.renderAll();
+    };
+
 }
 
-$(document).ready(function () {
-    //function setTextColor(picker) {
-    //    document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
-    //}
+//$(document).ready(function () {
+//    //function setTextColor(picker) {
+//    //    document.getElementsByTagName('body')[0].style.color = '#' + picker.toString()
+//    //}
 
    
-});
+//});
