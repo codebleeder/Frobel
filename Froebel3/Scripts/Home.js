@@ -260,6 +260,8 @@ function canvas_side() {
     document.getElementById('btn-remove').onclick = function () {
         removeActiveObjects();
     }
+
+   
 }
 
 //$(document).ready(function () {

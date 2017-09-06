@@ -72,3 +72,7 @@ button:active {
     top:10px;
     border: none;
 }
+
+#div-share {
+    text-align: center;
+}
