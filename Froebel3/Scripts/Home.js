@@ -201,6 +201,7 @@ function canvas_side() {
     canvas_side.on('object:selected', function (opt) {        
         var shape_type = opt.target.get('type');
         add_shape(shape_type, opt.target.top, opt.target.left);
+        canvas_side.discardActiveObject();  
     });
 
     var rect_side = new fabric.Rect(shapes_side.rect);
@@ -232,14 +233,18 @@ function canvas_side() {
 
     window.onkeydown = onKeyDownHandler;
 
+    function removeActiveObjects() {
+        var activeGroup = canvas_main.getActiveObjects();
+        activeGroup.forEach(function (object) {
+            canvas_main.remove(object);
+        });
+        canvas_main.discardActiveObject();  
+    }
+
     function onKeyDownHandler(e) {
         switch (e.key) {
             case 'Delete': // delete                
-                var activeGroup = canvas_main.getActiveObjects();
-                activeGroup.forEach(function (object) {
-                    canvas_main.remove(object);
-                });
-                canvas_main.discardActiveObject();                
+                removeActiveObjects();          
         }
     };
 
@@ -252,6 +257,9 @@ function canvas_side() {
         canvas_main.renderAll();
     };
 
+    document.getElementById('btn-remove').onclick = function () {
+        removeActiveObjects();
+    }
 }
 
 //$(document).ready(function () {
